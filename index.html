@@ -69,13 +69,17 @@
                         <h2 class="text-xl font-bold text-white flex items-center">
                             <span class="text-yellow-400 mr-2">⭐</span> Vidéo à la Une
                         </h2>
-                        <a href="https://archive.org/details/fog-1" target="_blank" class="text-xs text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1 transition">
-                            <i class="fa-solid fa-link"></i> Voir sur Internet Archive
+                        <a href="https://archive.org/download/fog-1/FOG_1.mp4" target="_blank" rel="noopener noreferrer" class="text-xs text-indigo-400 hover:text-indigo-300 hover:underline flex items-center gap-1 transition">
+                            <i class="fa-solid fa-link"></i> Lien MP4 Direct
                         </a>
                     </div>
-                    <!-- Player Internet Archive Embed -->
+                    
+                    <!-- Player HTML5 direct -->
                     <div class="aspect-video bg-black rounded-xl overflow-hidden shadow-inner border border-gray-800">
-                        <iframe src="https://archive.org/embed/fog-1" class="w-full h-full border-0" allowfullscreen webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                        <video controls class="w-full h-full object-cover">
+                            <source src="https://archive.org/download/fog-1/FOG_1.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de la vidéo.
+                        </video>
                     </div>
                 </div>
             </section>
@@ -95,10 +99,13 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Vidéo 1 (Desert like / Fog - Internet Archive) -->
+                    <!-- Vidéo 1 (Desert like / Fog) -->
                     <div class="bg-[#131a2b] border border-gray-800 rounded-2xl overflow-hidden flex flex-col">
                         <div class="aspect-video bg-black">
-                            <iframe src="https://archive.org/embed/fog-1" class="w-full h-full border-0" allowfullscreen webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                            <video controls class="w-full h-full object-cover">
+                                <source src="https://archive.org/download/fog-1/FOG_1.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture vidéo.
+                            </video>
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
                             <div>
@@ -106,19 +113,20 @@
                                 <p class="text-xs text-gray-400 mt-1">Walk by the wild side</p>
                             </div>
                             <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-800/60 text-xs text-gray-400">
-                                <span class="flex items-center gap-1"><i class="fa-solid fa-globe"></i> Internet Archive</span>
-                                <a href="https://archive.org/details/fog-1" target="_blank" class="hover:text-indigo-400 transition flex items-center gap-1">
-                                    <i class="fa-solid fa-link"></i> Lien Source
+                                <span class="flex items-center gap-1"><i class="fa-solid fa-file-video"></i> MP4 / HTML5</span>
+                                <a href="https://archive.org/download/fog-1/FOG_1.mp4" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition flex items-center gap-1">
+                                    <i class="fa-solid fa-link"></i> Lien MP4
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Vidéo 2 (Direct MP4) -->
+                    <!-- Vidéo 2 -->
                     <div class="bg-[#131a2b] border border-gray-800 rounded-2xl overflow-hidden flex flex-col">
                         <div class="aspect-video bg-black">
                             <video controls class="w-full h-full object-cover">
                                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture vidéo.
                             </video>
                         </div>
                         <div class="p-5 flex-1 flex flex-col justify-between">
@@ -128,7 +136,7 @@
                             </div>
                             <div class="flex justify-between items-center mt-4 pt-4 border-t border-gray-800/60 text-xs text-gray-400">
                                 <span class="flex items-center gap-1"><i class="fa-solid fa-file-video"></i> MP4 / HTML5</span>
-                                <a href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" target="_blank" class="hover:text-indigo-400 transition flex items-center gap-1">
+                                <a href="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition flex items-center gap-1">
                                     <i class="fa-solid fa-link"></i> Lien MP4
                                 </a>
                             </div>
